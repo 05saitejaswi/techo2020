@@ -21,6 +21,11 @@ img {
 }
 .imagine {
   padding-left: 35%;
+  background-image: url(chart.jpg);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 * {
@@ -36,7 +41,6 @@ h1 {
   font-weight: normal;
   color: #444;
   text-align: center;
-  margin: 2rem 0;
 }
 
 .wrapper {
@@ -216,6 +220,14 @@ h1 {
   }
 }
 
+.dev {
+  background: linear-gradient(to bottom, skyblue 0%, lightgray 100%);
+  /* background-image: url();
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
 .footer {
   width: 100%;
   background: #00121b;
@@ -335,4 +347,49 @@ li i {
   .footer-items {
     width: 100%;
   }
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+p {
+  align: center;
 }
